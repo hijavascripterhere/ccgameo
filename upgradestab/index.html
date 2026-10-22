@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upgrades tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="cursor.png">
+</head>
+<body>
+    <div class="screenbutton">
+        <div class="shopquarter">
+            <div onclick="upgrade2()" class="tab1">$ PURCHASE $</div>
+            <p>+1 coins per click; COST: 100$</p>
+        </div>
+        <div class="shopquarter">
+            <div onclick="upgrade1()" id="upgrade1" class="tab1">$ PURCHASE $</div>
+            <p>1.5x coins per click; COST: 1000$</p>
+        </div>
+        <div class="shopquarter">
+            <div onclick="upgrade3()" id="upgrade3" class="tab1">$ PURCHASE $</div>
+            <p id="upgrade4p">unlocks autoclicker base +50K clicks per second(clicks offline); COST: 500000$</p>
+        </div>
+        <div class="shopquarter">
+            <div onclick="upgrade4()" id="upgrade4" class="tab1">$ PURCHASE $</div>
+            <p>+10K clicks for autoclicker (purchase autoclicker first); COST: 400000$</p>
+        </div>
+    </div>
+    <div class="container">
+        <p id="name">user:</p>
+        <p id="currentcoins">coins:</p>
+        <p id="coinsperclick">coins per click: 1</p>
+        <p id="autoclicker">autoclicker: 50K
+            unlocked: false<p>
+        <div class="tab" onclick="earn()">
+            <p>£ EARN COINS £</p>
+        </div>
+        <div class="tab" onclick="upgrade()">
+            <p>⏅ UPGRADE ⏅</p>
+        </div>
+        <div class="tab" onclick="cheatButton()">
+            <p>♺ REGISTER ♺</p>
+        </div>
+        <div class="tab" onclick="resetGame()">
+            <p>⚠ WIPE SAVE ⚠</p>
+        </div>
+        <div class="tab" onclick="updateLogs()">
+            <p>⮿ UPDATE LOG ⮿</p>
+        </div>
+        <p>&copy; all rights reserved; MFworks</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

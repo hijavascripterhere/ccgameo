@@ -1,0 +1,128 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(48, 48, 48);
+    margin: 0;
+}
+.container{
+    background-color: rgb(37, 37, 37);
+    width: 10vw;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1vw;
+    transition: width 0.4s;
+
+    overflow-y: auto;   /* enables scrolling */
+    scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container:hover{
+    width: 12vw;
+}
+.screenbutton{
+    width: 90vw;
+    height: 100vh;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2vw;
+}
+.tab{
+    width: 9vw;
+    height: 10vh;
+    border: 1px solid grey;
+    margin-bottom: 1vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2s, font-size 0.4s;
+    border-radius: 1vh;
+    box-shadow: 0 5px 10px black;
+}
+.tab:hover{
+    width: 10vw;
+    font-size: 1.1vw;
+}
+#devconsole{
+    width: 3vw;
+    height: 3vw;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: aliceblue;
+    color: aliceblue;
+    opacity: 0;
+}
+#opendev{
+    width: 25vw;
+    height: 70vh;
+    border-radius: 1vw;
+    box-shadow: 0 5px 10px black;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1vw;
+    border: 1px solid grey;
+} 
+#subtabname{
+    width: 24vw;
+    height: 5vh;
+    border-radius: 1vh;
+    box-shadow: 0 5px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+}
+#row1{
+    width: 24vw;
+    height: 13vh;
+    border-radius: 1vh;
+    box-shadow: 0 5px 10px black;
+    margin: 3vh;
+    border: 1px solid grey;
+}
+#row1 input,
+#row1 button {
+    border-radius: 0.5vh;
+    box-shadow: 0 5px 10px black;
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    height: 3vh;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1vw;
+    border: 1px solid grey;
+}
+#close{
+    width: 24vw;
+    height: 5vh;
+    border-radius: 1vh;
+    box-shadow: 0 5px 10px black;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    margin-bottom: 1vh;
+}

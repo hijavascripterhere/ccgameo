@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="currentcoins1">coin clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="cursor.png">
+    <meta name="description" content="a coin clicker game built using javascript and simple made by MFworks">
+</head>
+<body id="body">
+    <div class="screenbutton" id="button" onclick="button()">
+        <p id="coins"><img src="dollar.png" style="width: 1.5vw; height: 1.5vw;"> 0</p>
+    </div>
+    <div class="container" id="container">
+        <p id="name">user:</p>
+        <p id="currentcoins"><img src="dollar.png" style="width: 1.5vh; height: 1.5vh;"> 0</p>
+        <p id="coinsperclick">coins per click: 1</p>
+        <p id="autoclicker">autoclicker: 50K
+            unlocked: false<p>
+        <div class="tab">
+            <p>£ EARN COINS £</p>
+        </div>
+        <div class="tab" onclick="upgrade()">
+            <p>⏅ UPGRADE ⏅</p>
+        </div>
+        <div class="tab" onclick="cheatButton()">
+            <p>♺ REGISTER ♺</p>
+        </div>
+        <div class="tab" onclick="resetGame()">
+            <p>⚠ WIPE SAVE ⚠</p>
+        </div>
+        <div class="tab" onclick="updateLogs()">
+            <p>⮿ UPDATE LOG ⮿</p>
+        </div>
+        <p>&copy; all rights reserved; MFworks</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
