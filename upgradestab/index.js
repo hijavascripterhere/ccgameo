@@ -108,6 +108,7 @@ function upgrade4() {
         stats.coins -= 400000
         stats.autoCoinsPerClick += 10000
         reloadcoins()
+        location.reload()
     }
 }
 
