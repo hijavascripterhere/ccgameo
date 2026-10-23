@@ -100,6 +100,7 @@ function upgrade3() {
 if (stats.upgrade4) {
     document.getElementById("upgrade3").remove()
     document.getElementById("upgrade4p").innerHTML = "unavailable: item purchased already"
+    location.reload()
 }
 
 
@@ -108,7 +109,6 @@ function upgrade4() {
         stats.coins -= 400000
         stats.autoCoinsPerClick += 10000
         reloadcoins()
-        location.reload()
     }
 }
 
